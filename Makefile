@@ -5,8 +5,7 @@ tomcat:
 	tar -xzpf apache-tomcat-7.0.34.tar.gz
 
 draw:
-	cd war/
-	jar cf ../draw.war .
+	cd war && jar cf draw.war .
 
 imageexport:
 	cd etc/imageexport && ant
